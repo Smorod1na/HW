@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/adminlte.css" rel="stylesheet" />
+    
+    @*<link href="~/Content/style.css" rel="stylesheet" />*@
+    <title>@ViewBag.Title</title>
+    @System.Web.Optimization.Styles.Render("~/Content/style")
+    @System.Web.Optimization.Scripts.Render("~/bundles/script")
+</head>
+<body>
+
+    <div class="wrapper">
+        @{
+            Html.RenderPartial("Header");
+        }
+   
+            @RenderBody()
+       
+    </div>
+    <script src="~/Scripts/popper.min.js"></script>
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/e5665d24cf.js" crossorigin="anonymous"></script>
+    <script src="~/Scripts/adminlte.js"></script>
+    @*<script src="~/Scripts/script.js"></script>*@
+</body>
+</html>

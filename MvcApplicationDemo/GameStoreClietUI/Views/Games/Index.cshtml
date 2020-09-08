@@ -1,0 +1,19 @@
+﻿@model IEnumerable<GameStoreClietUI.Models.GameCreateViewModel>
+
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+@{
+    Html.RenderPartial("Partial/Sidebar");
+}
+    <div class="content-wrapper">
+
+        <p>
+            @Html.ActionLink("Create New game", "Create", null, new { @class = "btn btn-primary" })
+        </p>
+        <div id="games">
+            @{
+                Html.RenderPartial("Partial/GamesPartial", Model);
+            }
+        </div>
+    </div>

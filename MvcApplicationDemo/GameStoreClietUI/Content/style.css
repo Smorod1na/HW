@@ -1,0 +1,23 @@
+﻿body {
+}
+.my-margin{
+    padding:20px;
+    margin:30px;
+}
+.my-color{
+    color:red;
+}
+h5{
+    color:darkblue;
+
+}
+.my-margin{
+    margin:100px;
+    
+}
+.my-container{
+   width:400px;
+   display:block;
+   margin:50px;
+
+}
